@@ -1,24 +1,25 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-   
-    <title>Document</title>
+<title>Page Title</title>
 </head>
 <body>
-    <h1>Hotel Name</h1>
-    <p id = "hotelname"></p>
-    
-    <h3>Total Rooms</h3>
-    <p id = "rooms"></p>
-    
-    <h3>Rooms Available</h3>
-    <p id = "roomsavail"></p>
-    
-    <button onclick="getRooms()">Get Hotel Info</button>
-    
-     <script type="text/javascript" src="objects.js"></script>
+
+<div id="main">
+<h1 id="demo">This is a Heading</h1>
+<p>This is a paragraph.</p>
+</div>
+
+<div id="watchthis">Before</div>
+
+<button onclick="myFunction()">Try it</button>
+
+<script>
+    function myFunction() {
+    document.getElementById("demo").innerHTML = "Look what I did";
+    document.getElementById("watchthis").innerHTML = "After";
+}
+</script>
+
 </body>
 </html>
